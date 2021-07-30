@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 import { HeaderComponent } from './header/header.component';
 import { NavComponent } from './nav/nav.component';
-import { TweempusTwimpListComponent } from './nav/tweempus-twimp-list/tweempus-twimp-list.component';
-import { TweempusTwimpCardComponent } from './nav/tweempus-twimp-card/tweempus-twimp-card.component';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
-  declarations: [HeaderComponent, NavComponent, TweempusTwimpListComponent, TweempusTwimpCardComponent],
+  declarations: [HeaderComponent, NavComponent],
   exports: [HeaderComponent, NavComponent]
 })
 export class CoreModule { }
